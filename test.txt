@@ -1,0 +1,14 @@
+curl -X POST http://localhost:8054/users \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}'
+
+
+curl -X PUT http://localhost:8054/users/1 \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "Updated test Name",
+  "email": "updated.test.email@example.com"
+}'

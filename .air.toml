@@ -1,0 +1,10 @@
+# Config file for air (https://github.com/cosmtrek/air)
+[build]
+bin = "main"
+cmd = "go build -o ./main -buildvcs=false ."
+full_bin = "./main"
+delay = 1000
+exclude_dir = ["vendor", "tmp"]
+
+[log]
+level = "debug"
